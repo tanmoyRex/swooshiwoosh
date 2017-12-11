@@ -49,6 +49,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ANw-cn-eVy" kind="show" id="orF-zS-MVE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaP-d9-llJ">
                                 <rect key="frame" x="62.5" y="203.5" width="250" height="35"/>
@@ -173,6 +176,17 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxK-hi-iJJ">
+                                <rect key="frame" x="16" y="30" width="27" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="OCY-3X-bcX"/>
+                                    <constraint firstAttribute="height" constant="20" id="uVL-Jx-DbP"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="5bV-Ve-4vN" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="FGH-K6-WlO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -183,19 +197,22 @@
                             <constraint firstItem="956-BY-Upq" firstAttribute="trailing" secondItem="Gyy-ON-zPx" secondAttribute="trailing" id="Peo-45-bcd"/>
                             <constraint firstItem="Gyy-ON-zPx" firstAttribute="top" secondItem="ozw-wA-13u" secondAttribute="top" id="Qpd-2Y-vc5"/>
                             <constraint firstItem="wgH-JC-FeU" firstAttribute="top" secondItem="a2I-H5-pah" secondAttribute="bottom" constant="50" id="U3L-b4-79F"/>
+                            <constraint firstItem="JxK-hi-iJJ" firstAttribute="top" secondItem="956-BY-Upq" secondAttribute="top" constant="10" id="bjI-Zc-cvY"/>
                             <constraint firstItem="a2I-H5-pah" firstAttribute="top" secondItem="956-BY-Upq" secondAttribute="top" constant="20" id="ds8-TX-ZdQ"/>
                             <constraint firstItem="a2I-H5-pah" firstAttribute="leading" secondItem="956-BY-Upq" secondAttribute="leading" id="gXj-DT-KGq"/>
                             <constraint firstItem="956-BY-Upq" firstAttribute="trailing" secondItem="a2I-H5-pah" secondAttribute="trailing" id="rNA-NY-Yz8"/>
                             <constraint firstItem="956-BY-Upq" firstAttribute="bottom" secondItem="B7g-Nh-o4U" secondAttribute="bottom" constant="20" id="sTq-4t-hb2"/>
                             <constraint firstItem="B7g-Nh-o4U" firstAttribute="leading" secondItem="956-BY-Upq" secondAttribute="leading" constant="16" id="tEl-L5-FRq"/>
+                            <constraint firstItem="JxK-hi-iJJ" firstAttribute="leading" secondItem="956-BY-Upq" secondAttribute="leading" constant="16" id="unC-dO-peO"/>
                             <constraint firstItem="956-BY-Upq" firstAttribute="trailing" secondItem="wgH-JC-FeU" secondAttribute="trailing" constant="16" id="z2y-uz-hDh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="956-BY-Upq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5o-uX-wdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5bV-Ve-4vN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="793" y="117"/>
+            <point key="canvasLocation" x="864.79999999999995" y="116.49175412293854"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fst-Wd-xqb">
@@ -205,7 +222,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="xRw-Ia-95L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="xRw-Ia-95L">
                                 <rect key="frame" x="0.0" y="-13" width="375" height="680"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="vx3-Ih-my5">
@@ -260,7 +277,7 @@
                                     <constraint firstAttribute="height" constant="50" id="fR4-yJ-v3g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="FINISH">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -286,10 +303,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Czb-0a-DJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="127.28635682158921"/>
+            <point key="canvasLocation" x="1510" y="116"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
