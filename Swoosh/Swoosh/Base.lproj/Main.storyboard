@@ -226,15 +226,59 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7ie-2K-rYP">
+                                <rect key="frame" x="16" y="190" width="343" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-8s-Wst" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40852418660000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9Fj-hu-7hE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Beginner">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4w-ZO-yap" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="184" y="0.0" width="159" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40852418660000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VW5-bX-ywp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Baller">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7G-iW-EQj" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40852418660000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fR4-yJ-v3g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="voQ-mb-DCR" firstAttribute="bottom" secondItem="xRw-Ia-95L" secondAttribute="bottom" id="4Uo-qB-C5Q"/>
+                            <constraint firstItem="7ie-2K-rYP" firstAttribute="leading" secondItem="voQ-mb-DCR" secondAttribute="leading" constant="16" id="Ktx-YW-VNp"/>
                             <constraint firstItem="voQ-mb-DCR" firstAttribute="trailing" secondItem="xRw-Ia-95L" secondAttribute="trailing" id="Mrp-Nf-Zr5"/>
                             <constraint firstItem="xRw-Ia-95L" firstAttribute="leading" secondItem="voQ-mb-DCR" secondAttribute="leading" id="PaX-Eu-HRr"/>
                             <constraint firstItem="xRw-Ia-95L" firstAttribute="top" secondItem="KBD-GA-vQn" secondAttribute="top" constant="-13" id="TkP-yw-que"/>
+                            <constraint firstItem="N7G-iW-EQj" firstAttribute="leading" secondItem="voQ-mb-DCR" secondAttribute="leading" constant="16" id="ZOC-tF-7WV"/>
+                            <constraint firstItem="7ie-2K-rYP" firstAttribute="top" secondItem="vx3-Ih-my5" secondAttribute="bottom" constant="50" id="a0K-qF-b73"/>
                             <constraint firstItem="vx3-Ih-my5" firstAttribute="top" secondItem="voQ-mb-DCR" secondAttribute="top" constant="20" id="fhZ-5I-B39"/>
+                            <constraint firstItem="voQ-mb-DCR" firstAttribute="bottom" secondItem="N7G-iW-EQj" secondAttribute="bottom" constant="20" id="ibp-QB-ChK"/>
+                            <constraint firstItem="voQ-mb-DCR" firstAttribute="trailing" secondItem="7ie-2K-rYP" secondAttribute="trailing" constant="16" id="mnL-7u-G8z"/>
                             <constraint firstItem="vx3-Ih-my5" firstAttribute="leading" secondItem="voQ-mb-DCR" secondAttribute="leading" constant="16" id="u2h-G4-UCi"/>
+                            <constraint firstItem="voQ-mb-DCR" firstAttribute="trailing" secondItem="N7G-iW-EQj" secondAttribute="trailing" constant="16" id="u5B-si-PDY"/>
                             <constraint firstItem="voQ-mb-DCR" firstAttribute="trailing" secondItem="vx3-Ih-my5" secondAttribute="trailing" constant="16" id="uY7-E1-d0c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="voQ-mb-DCR"/>
