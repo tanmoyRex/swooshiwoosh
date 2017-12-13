@@ -9,7 +9,11 @@
 import UIKit
 
 class LeagueVC: UIViewController {
-
+    @IBAction func onNextTab(_ sender: Any) { //program to next tab
+        performSegue(withIdentifier: "skillVCSegue", sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
